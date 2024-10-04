@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: survey
+  datasource:
+    url: jdbc:mysql://localhost/survey
+    username: root
+    password: 970411
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    mongodb:
+      uri: mongodb://mhje11:9704@localhost:27017/survey?authSource=admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        show_sql: true
+logging:
+  level:
+    org.hibernate.sql: debug
+
